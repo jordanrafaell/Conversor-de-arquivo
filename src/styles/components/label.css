@@ -1,0 +1,9 @@
+#label_escolha{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  color: black;
+  margin-top: 20px;
+  gap: 2px;
+  padding-left: 2px;
+}
