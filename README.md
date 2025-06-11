@@ -4,7 +4,11 @@
 
 Este aplicativo desktop permite converter arquivos localmente com apenas alguns cliques. Atualmente, ele realiza a conversão de **PDF para PNG e JPG**, com planos para suportar múltiplos formatos futuramente.
 
-![Interface do Projeto](./screenshot.png)
+<p align="center">
+  <img src="https://i.postimg.cc/13fvg00S/Captura-de-tela-2025-06-11-095002.png" alt="Interface do Projeto" />
+</p>
+
+
 
 ---
 
@@ -16,10 +20,6 @@ Este aplicativo desktop permite converter arquivos localmente com apenas alguns 
 ---
 
 ## 📌 Funcionalidades planejadas
-
-### 📄 PDF → Imagem
-- PDF → PNG ✅  
-- PDF → JPG ✅  
 
 ### 🖼️ Imagem → PDF
 - PNG → PDF  
