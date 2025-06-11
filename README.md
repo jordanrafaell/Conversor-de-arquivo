@@ -10,6 +10,15 @@ Este aplicativo desktop permite converter arquivos localmente com apenas alguns 
 
 ---
 
+# ⚠️ Aviso importante sobre a versão Beta
+O aplicativo está em versão Beta atual.
+Se o Windows ou seu antivírus avisar que o programa pode ser um vírus, não se preocupe!
+
+O código é open source, você pode conferir tudo no repositório.
+Estou trabalhando para melhorar e garantir total segurança nas próximas versões.
+
+---
+
 ## ✅ Funcionalidades atuais
 
 - 📄 **PDF → PNG**  
@@ -52,5 +61,20 @@ Este aplicativo desktop permite converter arquivos localmente com apenas alguns 
 - [`canvas`](https://www.npmjs.com/package/canvas) – renderização de imagens
 - [`jspdf`](https://www.npmjs.com/package/jspdf) – geração de PDFs (para uso futuro)
 
+---
+
+## 📥 Como baixar o aplicativo
+Para baixar o Conversor de Arquivos, siga estes passos:
+
+Vá na aba [Releases](https://github.com/jordanrafaell/Conversor-de-arquivo/tags) do projeto no GitHub.
+
+Clique na primeira tag da lista, que normalmente é a versão mais recente.
+
+Procure pela versão marcada como Beta ou com nome parecido, tipo (new version).
+
+Na página da release, baixe o arquivo Conversor.exe na seção de Assets.
+
+Assim você terá o app pronto para usar no seu computador.
+---
 
 ## Desenvolvido por Jordan Rafael
