@@ -1,7 +1,7 @@
 {
   "name": "conversor-de-arquivo",
   "version": "1.0.0",
-  "description": "",
+  "description": "App de conversao de arquivos",
   "homepage": "https://github.com/jordanrafaell/Conversor-de-arquivo#readme",
   "bugs": {
     "url": "https://github.com/jordanrafaell/Conversor-de-arquivo/issues"
@@ -11,22 +11,24 @@
     "url": "git+https://github.com/jordanrafaell/Conversor-de-arquivo.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Jordan Rafael",
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
+    "rebuild": "electron-rebuild",
+    "postinstall": "electron-rebuild",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^7.8.1",
-    "@electron-forge/maker-deb": "^7.8.1",
-    "@electron-forge/maker-rpm": "^7.8.1",
-    "@electron-forge/maker-squirrel": "^7.8.1",
-    "@electron-forge/maker-zip": "^7.8.1",
-    "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
-    "@electron-forge/plugin-fuses": "^7.8.1",
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "@electron-forge/plugin-fuses": "^7.2.0",
     "@electron/fuses": "^1.8.0",
     "electron": "36.3.1",
     "electron-rebuild": "^3.2.9"
@@ -36,5 +38,37 @@
     "electron-squirrel-startup": "^1.0.1",
     "jspdf": "^3.0.1",
     "pdfjs-dist": "^2.16.105"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "conversor_de_arquivo",
+            "authors": "Jordan Rafael",
+            "exe": "conversor-de-arquivo.exe",
+            "setupIcon": "./src/assets/icon.ico",
+            "noMsi": true,
+            "setupExe": "Conversor.exe",
+            "description": "App de conversão de arquivos"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }

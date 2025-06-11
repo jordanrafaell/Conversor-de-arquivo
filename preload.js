@@ -1,5 +1,8 @@
 // /preload.js
-const { contextBridge, ipcRenderer } = require('electron/renderer');
+const {
+  contextBridge,
+  ipcRenderer
+} = require('electron/renderer');
 
 contextBridge.exposeInMainWorld('versions', {
   node: () => process.versions.node,
@@ -10,7 +13,8 @@ contextBridge.exposeInMainWorld('versions', {
 contextBridge.exposeInMainWorld('electronAPI', {
   // Essas funções continuam enviando para o main, que pode salvar arquivo etc
   onRespostaSalvar: (callback) => ipcRenderer.on('resposta-salvar', callback),
-  salvarArquivo: (data) => ipcRenderer.invoke('salvar-arquivo', data)
+  salvarArquivo: (data) => ipcRenderer.invoke('salvar-arquivo', data),
+  closeApp: () => ipcRenderer.send('app:close')
 });
 
 contextBridge.exposeInMainWorld('pdfAPI', {
