@@ -4,6 +4,13 @@ const selectedList = document.querySelector('#formato');
 const submitButton = document.querySelector('#submit_btn');
 const nameFile = document.querySelector('#nameFile');
 
+
+// fechar menu
+document.getElementById('btn-close').addEventListener('click', () => {
+  window.electronAPI.closeApp();
+});
+
+
 window.addEventListener('DOMContentLoaded', () => {
   console.log('window.pdfAPI:', window.pdfAPI);
   console.log('window.versions:', window.versions);
@@ -12,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function setLoading(ativo) {
   const loadingEl = document.getElementById('loading');
   if (loadingEl) {
-    loadingEl.style.display = ativo ? 'block' : 'none';
+    loadingEl.style.display = ativo ? 'none' : 'block';
   }
 }
 
