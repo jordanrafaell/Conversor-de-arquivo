@@ -7,8 +7,11 @@ Este aplicativo desktop permite converter arquivos localmente com apenas alguns 
 <p align="center">
   <img src="https://i.postimg.cc/13fvg00S/Captura-de-tela-2025-06-11-095002.png" alt="Interface do Projeto" />
 </p>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1b7bf64511d6536c8d07df4c73867746fa8ec319
 
 ---
 
